@@ -20,7 +20,7 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 /* For both vertical and horizontal scrollbars */
@@ -132,10 +132,17 @@ header div.action-icons a div img {
   opacity: 50%;
   border-radius: 12px;
   margin: 0 0;
+  transition: all 0.3s ease;
+}
+#banner .slick-dots li:hover {
+  opacity: 30%;
 }
 #banner .slick-dots li.slick-active {
   opacity: 100%;
   width: 62px;
+}
+#banner .slick-dots li.slick-active:hover {
+  opacity: 100%;
 }
 #banner .slick-dots li:nth-child(1) {
   border-bottom-left-radius: 12px;
@@ -196,7 +203,7 @@ header div.action-icons a div img {
 #banner div.carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 95vh;
+  min-height: 720px;
 }
 #banner div.carousel-item::before {
   position: absolute;
@@ -253,4 +260,78 @@ header div.action-icons a div img {
   width: 250px;
   font-size: 24px;
   color: #3c4243;
+}
+
+#deals {
+  padding: 60px 0;
+}
+#deals .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+#deals div.deal-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 356.2px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: #fff;
+}
+#deals div.deal-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.112);
+  border-radius: 12px;
+}
+#deals div.deal-container:hover {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5529411765);
+}
+#deals div.deal-container:nth-child(1) {
+  background-image: url(../images/bg-2.jpg);
+}
+#deals div.deal-container:nth-child(2) {
+  background-image: url(../images/bg-3.jpg);
+}
+#deals div.deal-container .content {
+  position: absolute;
+  left: 28.12px;
+  top: 67.29px;
+}
+#deals div.deal-container .content h6 {
+  font-size: 18px;
+  line-height: 30.07px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  font-family: "montserrat-extrabold";
+  margin-bottom: 5px;
+}
+#deals div.deal-container .content h1 {
+  font-size: 34px;
+  line-height: 45.1px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+#deals div.deal-container .content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.06px;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+}
+#deals div.deal-container .content a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 30.13px;
+  border-bottom: 1px solid #fff;
 }/*# sourceMappingURL=styles.css.map */

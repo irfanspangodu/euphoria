@@ -1,7 +1,7 @@
 @font-face {
     font-family: "causten-medium";
     src: url("../fonts/causten-medium-webfont.woff2") format("woff2"),
-         url("../fonts/causten-medium-webfont.woff") format("woff");
+        url("../fonts/causten-medium-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
@@ -11,9 +11,17 @@
 @font-face {
     font-family: "causten-regular";
     src: url("../fonts/causten-regular-webfont.woff2") format("woff2"),
-         url("../fonts/causten-regular-webfont.woff") format("woff");
+        url("../fonts/causten-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+@font-face {
+    font-family: "montserrat-extrabold";
+    src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
