@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+}
+
+body {
+  color: #000;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 6%;
+}
+header a.logo {
+  width: 92px;
+  height: 45px;
+  display: block;
+}
+header a.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header nav ul#navLinks {
+  display: grid;
+  gap: 45px;
+  grid-template-columns: repeat(5, auto);
+}
+header nav ul#navLinks li a {
+  color: #807D7E;
+  font-size: 22px;
+  font-family: "causten-medium";
+}
+header nav ul#navLinks li a:hover {
+  color: #3C4242;
+}
+header div.search-container {
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  width: 267px;
+  height: 44px;
+}
+header div.search-container div.search-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 20px;
+}
+header div.search-container div.search-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header div.search-container input {
+  width: 100%;
+  font-family: "causten-regular";
+  font-size: 16px;
+  color: #807d7e;
+}
+header div.action-icons {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, auto);
+}
+header div.action-icons a {
+  background-color: #f6f6f6;
+  padding: 12px;
+  border-radius: 8px;
+}
+header div.action-icons a:hover {
+  background-color: #e0e0e0;
+}
+header div.action-icons a div {
+  width: 15px;
+  height: 14px;
+  display: block;
+}
+header div.action-icons a div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#banner div.carousel-item {
+  min-height: 500px;
+}
+#banner div.carousel-item.slide-1 {
+  background-image: url("../images/bg-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=styles.css.map */

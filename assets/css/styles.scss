@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+}
+
+body {
+    color: #000;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 6%;
+
+    a.logo {
+        width: 92px;
+        height: 45px;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    nav {
+        ul#navLinks {
+            display: grid;
+            gap: 45px;
+            grid-template-columns: repeat(5, auto);
+
+            li {
+                a {
+                    color: #807D7E;
+                    font-size: 22px;
+                    font-family: "causten-medium";
+
+                    &:hover {
+                        color: #3C4242;
+                    }
+                }
+            }
+        }
+    }
+
+    div.search-container {
+        background-color: #F6F6F6;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-radius: 8px;
+        width: 267px;
+        height: 44px;
+
+        div.search-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin-left: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        input {
+            width: 100%;
+            font-family: "causten-regular";
+            font-size: 16px;
+            color: #807d7e;
+        }
+    }
+
+    div.action-icons {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(3, auto);
+
+        a {
+            background-color: #f6f6f6;
+            padding: 12px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            div {
+                width: 15px;
+                height: 14px;
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#banner {
+    div.carousel-item {
+        min-height: 500px;
+        &.slide-1 {
+            background-image: url("../images/bg-1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
