@@ -17,13 +17,33 @@ body {
   font-weight: normal;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* For both vertical and horizontal scrollbars */
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   background-color: #fff;
-  padding: 15px 6%;
+  padding: 24px 6%;
 }
 header a.logo {
   width: 92px;
@@ -54,14 +74,13 @@ header div.search-container {
   align-items: center;
   gap: 12px;
   border-radius: 8px;
+  padding: 12px 20px;
   width: 267px;
-  height: 44px;
 }
 header div.search-container div.search-icon {
   width: 20px;
   height: 20px;
   display: block;
-  margin-left: 20px;
 }
 header div.search-container div.search-icon img {
   width: 100%;
@@ -98,11 +117,140 @@ header div.action-icons a div img {
   display: block;
 }
 
+#banner {
+  position: relative;
+  overflow: hidden;
+}
+#banner .slick-dots {
+  position: absolute;
+  bottom: 30px;
+}
+#banner .slick-dots li {
+  width: 63px;
+  height: 10px;
+  background: #fff;
+  opacity: 50%;
+  border-radius: 12px;
+  margin: 0 0;
+}
+#banner .slick-dots li.slick-active {
+  opacity: 100%;
+  width: 62px;
+}
+#banner .slick-dots li:nth-child(1) {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#banner .slick-dots li:nth-child(2) {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#banner .slick-dots li .horizontal-indicator::before {
+  content: "";
+}
+#banner .custom-arrow {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+#banner .custom-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+#banner .slick-prev {
+  width: 160px;
+  height: 50px;
+}
+#banner .slick-prev::before {
+  content: "";
+}
+#banner .slick-prev img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#banner .slick-next {
+  width: 160px;
+  height: 50px;
+}
+#banner .slick-next::before {
+  content: "";
+}
+#banner .slick-next img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 #banner div.carousel-item {
-  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;
+}
+#banner div.carousel-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.116);
 }
 #banner div.carousel-item.slide-1 {
-  background-image: url("../images/bg-1.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-image: url(../images/bg-1.jpg);
+}
+#banner div.carousel-item.slide-2 {
+  background-image: url(../images/bg-2.jpg);
+}
+#banner div.carousel-item div.content {
+  padding: 129px 193px;
+  position: relative;
+  z-index: 2;
+}
+#banner div.carousel-item div.content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.16px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#banner div.carousel-item div.content h1 {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 94px;
+  letter-spacing: 0.31px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#banner div.carousel-item div.content p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.31px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+#banner div.carousel-item div.content a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  text-align: center;
+  padding: 16px 56px;
+  border-radius: 8px;
+  font-weight: 700;
+  width: 250px;
+  font-size: 24px;
+  color: #3c4243;
 }/*# sourceMappingURL=styles.css.map */
