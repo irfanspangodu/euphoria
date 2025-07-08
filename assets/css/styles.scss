@@ -633,7 +633,7 @@ header {
 
     div.bottom {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 50.27px;
 
         div.box {
@@ -736,7 +736,7 @@ header {
 
     div.bottom {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 50.27px;
 
         div.box {
@@ -809,4 +809,75 @@ header {
             }
         }
     }
+}
+
+#brands {
+    padding-bottom: 70px;
+
+    div.container {
+        border-radius: 12px;
+        background: #3C4242;
+        width: 100%;
+        height: 100%;
+        min-height: 357.17px;
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div.top {
+            h1 {
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-family: "causten-regular";
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 50px;
+
+                span {
+                    font-family: "causten-medium";
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    color: #fbd103;
+                }
+            }
+        }
+
+        div.bottom {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+
+            div.img-container {
+                width: 177.51px;
+                height: 85.55px;
+                opacity: 1;
+                display: block;
+                img {
+                    width: 100%;
+                    border-radius: 12px;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
 }
