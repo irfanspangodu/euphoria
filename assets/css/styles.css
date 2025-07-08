@@ -338,7 +338,7 @@ header div.action-icons a div img {
 
 #arrival {
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 #arrival h1 {
   margin-bottom: 33.5px;
@@ -448,4 +448,70 @@ header div.action-icons a div img {
 #arrival .slick-slide p {
   text-align: left !important;
   width: 90%;
+}
+
+#fashion {
+  padding-bottom: 60px;
+}
+#fashion .wrapper {
+  display: flex;
+  align-items: center;
+}
+#fashion div.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  min-width: 614px;
+  height: 639.72px;
+}
+#fashion div.container:nth-child(1) {
+  position: relative;
+  background-image: url(../images/bg-4.jpg);
+}
+#fashion div.container:nth-child(2) {
+  background-image: url(../images/bg-5.jpg);
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+#fashion div.container .content {
+  position: absolute;
+  top: 183px;
+  left: 74px;
+}
+#fashion div.container .content h1 {
+  height: 84px;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 0.21px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#fashion div.container .content h4 {
+  width: 451px;
+  height: 72px;
+  font-family: "causten-regular";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+#fashion div.container .content a.btn {
+  display: inline-block;
+  width: 168px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 12px 44px;
+  font-family: "causten-medium";
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #3c4242;
 }/*# sourceMappingURL=styles.css.map */
