@@ -334,4 +334,118 @@ header div.action-icons a div img {
   color: #fff;
   line-height: 30.13px;
   border-bottom: 1px solid #fff;
+}
+
+#arrival {
+  position: relative;
+  padding-bottom: 60px;
+}
+#arrival h1 {
+  margin-bottom: 33.5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: 2%;
+  line-height: 33.5px;
+  color: #3c4242;
+}
+#arrival h1 span.border {
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #8A33FD;
+}
+#arrival .arrival {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  padding: 0 30px;
+}
+#arrival .arrival div.box {
+  width: 100%;
+}
+#arrival .arrival div.box div.img-container {
+  width: 262.81px;
+  height: 262.81px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#arrival .arrival div.box div.img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#arrival .arrival div.box p {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3C4242;
+  line-height: 100%;
+  letter-spacing: 1%;
+}
+#arrival .custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+#arrival .custom-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+#arrival .slick-prev {
+  left: 5px;
+  width: 14px;
+  height: 12px;
+}
+#arrival .slick-prev::before {
+  content: "";
+}
+#arrival .slick-prev img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#arrival .slick-next {
+  right: 5px;
+  width: 14px;
+  height: 12px;
+}
+#arrival .slick-next::before {
+  content: "";
+}
+#arrival .slick-next img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#arrival .slick-list {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+#arrival .slick-track {
+  margin: 0 !important;
+  display: flex !important;
+  gap: 0 !important;
+}
+#arrival .slick-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+#arrival .slick-slide p {
+  text-align: left !important;
+  width: 90%;
 }/*# sourceMappingURL=styles.css.map */
