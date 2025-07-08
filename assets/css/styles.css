@@ -604,4 +604,92 @@ header div.action-icons a div img {
   width: 100%;
   display: block;
   filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(96%) contrast(92%);
+}
+
+#cat4women {
+  padding-bottom: 70px;
+}
+#cat4women div.top {
+  text-align: left;
+  margin-bottom: 40px;
+}
+#cat4women div.top h1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #3c4242;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#cat4women div.top h1 span.border {
+  background-color: #8A33FD;
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+}
+#cat4women div.bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 50.27px;
+}
+#cat4women div.bottom div.box {
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 270.36px;
+  height: 100%;
+}
+#cat4women div.bottom div.box:hover {
+  transform: translateY(-5px);
+}
+#cat4women div.bottom div.box div.img-container {
+  width: 270.36px;
+  height: 100%;
+  opacity: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+}
+#cat4women div.bottom div.box div.img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cat4women div.bottom div.box div.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cat4women div.bottom div.box div.content div.text h3 {
+  font-family: "poppins-medium";
+  font-weight: 700;
+  font-size: 17.88px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #2A2F2F;
+}
+#cat4women div.bottom div.box div.content div.text p {
+  font-family: "poppins-medium";
+  font-weight: 500;
+  font-size: 13.41px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #7f7f7f;
+}
+#cat4women div.bottom div.box div.content a.right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+}
+#cat4women div.bottom div.box div.content a.right img {
+  width: 100%;
+  display: block;
+  filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(96%) contrast(92%);
 }/*# sourceMappingURL=styles.css.map */
