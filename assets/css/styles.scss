@@ -1096,3 +1096,231 @@ header {
         }
     }
 }
+
+footer {
+    background-color: #3C4242;
+    padding: 60px 70px 40px;
+
+    div.top {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 1059px;
+        opacity: 1;
+        margin: 0 auto;
+
+        .item {
+            h3 {
+                font-family: "causten-medium";
+                font-weight: 700;
+                font-size: 28.58px;
+                line-height: 217%;
+                letter-spacing: 0%;
+                color: #F6F6F6;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                li {
+                    a {
+                        font-family: "causten-medium";
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 217%;
+                        letter-spacing: 0%;
+                        color: #F6F6F6;
+
+                        &:hover {
+                            opacity: .75;
+                        }
+                    }
+
+                    p {
+                        font-family: "causten-medium";
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 217%;
+                        letter-spacing: 0%;
+                        color: #f6f6f6;
+                    }
+                }
+            }
+        }
+    }
+
+    div.middle {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 1059px;
+        opacity: 1;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            width: 1200px;
+            height: 1%;
+            content: "";
+            bottom: 0;
+            left: -65px;
+            background: #BEBCBD;
+        }
+
+        div.social-icons {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            gap: 9.97px;
+
+            a {
+                position: relative;
+                display: inline-block;
+                width: 37.02px;
+                height: 37.02px;
+                opacity: 1;
+                border-radius: 10.68px;
+                background: #F6F6F6;
+
+                img {
+                    width: 12px;
+                    height: 17.79px;
+                    opacity: 1;
+                    position: absolute;
+                    top: 9.26px;
+                    left: 13.53px;
+
+                }
+            }
+        }
+
+        div.text {
+            text-align: left;
+
+            h2 {
+                font-family: "causten-medium";
+                font-weight: 700;
+                font-size: 28.58px;
+                line-height: 217%;
+                letter-spacing: 0%;
+                margin-right: 150px;
+                color: #f6f6f6;
+                margin-bottom: 10px;
+            }
+
+            .app-buttons {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                a {
+                    border-radius: 12px;
+                    opacity: 1;
+                    display: flex;
+                    align-items: center;
+                    width: 153.76px;
+                    gap: 10px;
+                    background-color: #404040;
+                    padding: 10px 3px;
+
+                    div.img-container {
+                        width: 29.65px;
+                        height: 32.97px;
+                        opacity: 1;
+                        display: block;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+
+                    div.text {
+                        p {
+                            font-family: "causten-regular";
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+                            color: #fff;
+                        }
+
+                        h4 {
+                            font-family: "causten-regular";
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.bottom {
+        width: 1059px;
+        opacity: 1;
+        margin: 0 auto;
+
+        div.popular-categories {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                width: 1200px;
+                height: 1%;
+                content: "";
+                bottom: 0;
+                left: -65px;
+                background: #BEBCBD;
+            }
+
+            h4 {
+                font-family: "causten-medium";
+                font-weight: 700;
+                font-size: 28.58px;
+                line-height: 200%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #f6f6f6;
+            }
+
+            div.img-container {
+                width: 17px;
+                height: 17px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        div.text {
+            padding-top: 40px;
+            text-align: center;
+
+            p {
+                font-family: "causten-regular";
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 200%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #fff;
+            }
+        }
+    }
+}
