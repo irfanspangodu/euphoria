@@ -19,7 +19,30 @@ $(document).ready(function () {
         // Custom Paging for horizontal rectangular indicators
         customPaging: function (slider, i) {
             return '<button type="button" class="horizontal-indicator"></button>';
-        }
+        },
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                },
+            },
+        ],
     });
 
 
@@ -59,7 +82,7 @@ $(document).ready(function () {
             },
         ],
     });
-    
+
     $('.feedback').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -75,6 +98,12 @@ $(document).ready(function () {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
                 },
             },
             {
