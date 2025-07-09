@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Initialize the banner slider
-    
+
     $('.banner').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -47,6 +47,32 @@ $(document).ready(function () {
             },
             {
                 breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+    
+    $('.feedback').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                 },

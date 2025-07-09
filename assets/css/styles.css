@@ -862,4 +862,76 @@ header div.action-icons a div img {
   line-height: 100%;
   letter-spacing: 0%;
   color: #3C4242;
+}
+
+#feedback {
+  padding-bottom: 70px;
+}
+#feedback div.top {
+  text-align: left;
+  margin-bottom: 40px;
+}
+#feedback div.top h1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #3c4242;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#feedback div.top h1 span.border {
+  background-color: #8A33FD;
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+}
+#feedback div.bottom div.card {
+  width: 396.87px;
+  height: 292px;
+  opacity: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 23.19px;
+  border: 1.8px solid #BEBCBD;
+  overflow: hidden;
+  margin-right: 20px;
+}
+#feedback div.bottom div.card .info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#feedback div.bottom div.card .info .user-info .img-container {
+  width: 57.98px;
+  height: 57.98px;
+  display: block;
+  margin-bottom: 20px;
+}
+#feedback div.bottom div.card .info .user-info .img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#feedback div.bottom div.card .info .user-info h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #3C4242;
+}
+#feedback div.bottom div.card .info div.stars {
+  color: #EDD146;
+}
+#feedback div.bottom div.card div.content p {
+  font-family: "causten-regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 2%;
+  color: #807D7E;
 }/*# sourceMappingURL=styles.css.map */

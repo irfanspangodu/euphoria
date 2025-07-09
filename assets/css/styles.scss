@@ -1008,3 +1008,91 @@ header {
         }
     }
 }
+
+#feedback {
+    padding-bottom: 70px;
+
+    div.top {
+        text-align: left;
+        margin-bottom: 40px;
+
+        h1 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #3c4242;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 33.5px;
+            letter-spacing: 2%;
+
+            span.border {
+                background-color: #8A33FD;
+                width: 6px;
+                height: 30px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    div.bottom {
+        div.card {
+            width: 396.87px;
+            height: 292px;
+            opacity: 1;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 23.19px;
+            border: 1.8px solid #BEBCBD;
+            overflow: hidden;
+            margin-right: 20px;
+
+            .info {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+
+                .user-info {
+                    .img-container {
+                        width: 57.98px;
+                        height: 57.98px;
+                        display: block;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+
+                    h3 {
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 100%;
+                        letter-spacing: 2%;
+                        text-align: center;
+                        color: #3C4242;
+                    }
+                }
+
+                div.stars {
+                    color: #EDD146;
+                }
+            }
+
+            div.content {
+                p {
+                    font-family: "causten-regular";
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.4em;
+                    letter-spacing: 2%;
+                    color: #807D7E;
+                }
+            }
+        }
+    }
+}
