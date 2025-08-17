@@ -14,7 +14,7 @@ $(document).ready(function () {
         cssEase: 'linear',
 
         prevArrow: '<button type="button" class="slick-prev custom-arrow"><img src="assets/icons/left-arrow-bold.svg" alt="prev-icon" /></button>',
-        nextArrow: '<button type="button" class="slick-next custom-arrow"><img src="assets/icons/right-arrow-bold.svg" alt="next-icon" /><</button>',
+        nextArrow: '<button type="button" class="slick-next custom-arrow"><img src="assets/icons/right-arrow-bold.svg" alt="next-icon" /></button>',
 
         // Custom Paging for horizontal rectangular indicators
         customPaging: function (slider, i) {
