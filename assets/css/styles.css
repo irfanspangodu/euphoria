@@ -1948,31 +1948,28 @@ footer div.middle::before {
   background: #bebcbd;
 }
 
-footer div.middle div.social-icons {
-  opacity: 1;
+footer .social-icons {
   display: flex;
   align-items: center;
-  gap: 9.97px;
+  gap: 10px;
 }
 
-footer div.middle div.social-icons a {
-  position: relative;
-  display: inline-block;
+footer .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 37.02px;
   height: 37.02px;
-  opacity: 1;
   border-radius: 10.68px;
   background: #f6f6f6;
 }
 
-footer div.middle div.social-icons a img {
-  width: 12px;
-  height: 17.79px;
-  opacity: 1;
-  position: absolute;
-  top: 9.26px;
-  left: 13.53px;
+footer .social-icons a img {
+  max-width: 60%;
+  height: auto;
+  display: block;
 }
+
 
 footer div.middle div.text {
   text-align: left;
